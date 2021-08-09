@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 
+// use
+// component name must be uppercase
+// must be in the function/component body
+// cannot call conditionally
+
 const UseStateBasics = () => {
   // console.log(useState('hello world'));
   // const value = useState(1)[0];
@@ -9,7 +14,7 @@ const UseStateBasics = () => {
   const [text, setText] = useState('random title');
 
   const handleClick = () => {
-    if (text == 'Random Title') {
+    if (text === 'Random Title') {
       setText('Hello World')
     } else {
       setText('Random Title')
